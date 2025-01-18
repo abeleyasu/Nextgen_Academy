@@ -4,6 +4,8 @@ import { AuthForm } from './components/AuthForm';
 import { LandingPage } from './components/LandingPage';
 import { DashboardLayout } from './components/DashboardLayout';
 import { Dashboard } from './pages/Dashboard';
+import { CoursesPage } from './pages/CoursesPage'; // Named export
+import { ExamsPage } from './pages/ExamsPage'; // Named export
 import { supabase } from './lib/supabase';
 import type { User } from '@supabase/supabase-js';
 
@@ -38,11 +40,12 @@ function App() {
         <Route path="/" element={user ? <Navigate to="/dashboard" /> : <LandingPage />} />
         <Route path="/signin" element={user ? <Navigate to="/dashboard" /> : <AuthForm />} />
         <Route path="/signup" element={user ? <Navigate to="/dashboard" /> : <AuthForm initialMode="signup" />} />
-        
-        {/* Dashboard Routes */}
+
+        {/* Protected Dashboard Routes */}
         <Route path="/dashboard" element={user ? <DashboardLayout /> : <Navigate to="/" />}>
           <Route index element={<Dashboard />} />
-          {/* Other dashboard routes will be added here */}
+          <Route path="courses" element={<CoursesPage />} />
+          <Route path="exams" element={<ExamsPage />} />
         </Route>
       </Routes>
     </Router>
@@ -50,3 +53,4 @@ function App() {
 }
 
 export default App;
+
