@@ -9,4 +9,4 @@ export const CoursesPage = () => {
     </div>
   );
 };
-
+#Course page
