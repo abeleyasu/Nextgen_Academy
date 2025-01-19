@@ -66,52 +66,39 @@ export function LandingPage() {
             </main>
           </div>
         </div>
+      </div>
 
-        {/* Features Section */}
-        <div className="bg-gray-50 py-16 sm:py-24">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-                Why Choose NextGen Academy?
-              </h2>
-            </div>
-            <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-3">
-              {/* Feature 1 */}
-              <div className="bg-white rounded-lg shadow-sm p-6">
-                <img
-                  src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=640"
-                  alt="Coding workspace"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Practical Learning</h3>
-                <p className="text-gray-600">Build real-world projects that enhance your portfolio and prepare you for professional development.</p>
-              </div>
-
-              {/* Feature 2 */}
-              <div className="bg-white rounded-lg shadow-sm p-6">
-                <img
-                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=640"
-                  alt="Team collaboration"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Expert Guidance</h3>
-                <p className="text-gray-600">Learn from industry professionals with years of experience in full-stack development.</p>
-              </div>
-
-              {/* Feature 3 */}
-              <div className="bg-white rounded-lg shadow-sm p-6">
-                <img
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=640"
-                  alt="Learning progress"
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Flexible Learning</h3>
-                <p className="text-gray-600">Study at your own pace with our structured learning paths and track your progress.</p>
-              </div>
+      {/* Features Section */}
+      <div className="bg-gray-50 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Why Choose NextGen Academy?
+            </h2>
+          </div>
+          <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-3">
+            {/* Feature 1 */}
+            <div className="bg-white rounded-lg shadow-sm p-6">
+              <img
+                src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=640"
+                alt="Coding workspace"
+                className="w-full h-48 object-cover rounded-lg mb-4"
+              />
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Practical Learning</h3>
+              <p className="text-gray-600">Build real-world projects that enhance your portfolio and prepare you for professional development.</p>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Additional Sections */}
+      {/* Testimonials */}
+      <div>Testimonials here</div>
+      {/* Pricing */}
+      <div>Price tiers here</div>
+      {/* Newsletter */}
+      <div>Newsletter</div>
     </div>
   );
 }
+
